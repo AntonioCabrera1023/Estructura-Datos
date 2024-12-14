@@ -1,0 +1,439 @@
+/* Estilos generales para el documento */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilos del body */
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white; 
+}
+
+/* Estilos de navegación */
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+}
+
+nav .links {
+    display: flex;
+}
+
+nav .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+nav .links a:hover {
+    text-decoration: underline;
+}
+
+nav .buttons button {
+    margin: 0 5px;
+    width: 40%;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(7, 113, 219);
+    transition: 0.2s linear;
+}
+
+nav .buttons button:hover {
+    color: rgb(7, 113, 219);
+    background-color: transparent;
+    border: 2px solid rgb(7, 113, 219);
+    box-shadow: 0 0 10px 4px rgb(7, 113, 219);
+}
+
+/* Sección de Inicio */
+section#inicio {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#inicio .content {
+    width: 70%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+section#inicio .content h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 7px white;
+}
+
+section#inicio .content p {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 1.2rem;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sección de Horarios */
+section.horarios {
+    padding: 40px 20px;
+    background-color: #f7f9fc;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+section.horarios h2 {
+    color: rgb(7, 113, 219);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 0 0 5px white;
+}
+
+section.horarios p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la tabla */
+section.horarios table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+section.horarios th {
+    background-color: #07427d;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px;
+    text-align: center;
+}
+
+section.horarios td {
+    background-color: #eef6fc;
+    padding: 12px;
+    color: #333; /* Texto oscuro para contraste */
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+section.horarios tr:nth-child(even) td {
+    background-color: #d8ebf7; /* Color alterno para filas pares */
+}
+
+section.horarios tr:hover td {
+    background-color: #b9dcef;
+    cursor: pointer;
+}
+
+/* Botón llamativo debajo de la tabla */
+section.horarios button {
+    background-color: rgb(7, 113, 219);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(7, 113, 219, 0.5);
+}
+
+section.horarios button:hover {
+    background-color: #f5f5f5;
+    color: rgb(7, 113, 219);
+    border: 2px solid rgb(7, 113, 219);
+    box-shadow: 0 0 15px 5px rgba(7, 113, 219, 0.6);
+    transform: scale(1.1);
+}
+
+/* Ajustes para mejorar la accesibilidad y estilo visual */
+section.horarios .tabla-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las celdas */
+section.horarios td, section.horarios th {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+section.horarios th {
+    background-color: #07427d;
+    color: white;
+    font-size: 1.2rem;
+}
+
+section.horarios td {
+    background-color: #eef6fc;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+section.horarios tr:nth-child(even) td {
+    background-color: #d8ebf7;
+}
+
+section.horarios tr:hover td {
+    background-color: #b9dcef;
+    cursor: pointer;
+}
+
+/* Estilos para el botón "Regresar" */
+.btn-regresar {
+    background-color: rgb(7, 113, 219);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-regresar:hover {
+    background-color: #f5f5f5;
+    color: rgb(7, 113, 219);
+    border: 2px solid rgb(7, 113, 219);
+    box-shadow: 0 0 15px 5px rgba(7, 113, 219, 0.6);
+    transform: scale(1.1);
+}
+
+
+
+
+/* Sección de Historia */
+section#historia {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    color: #333;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section#historia h2 {
+    color: rgb(7, 113, 219);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+section#historia p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+section#historia button {
+    background-color: rgb(7, 113, 219);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Sección de Historia */
+section#historia {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+section#historia:hover {
+    transform: translateY(-10px); /* Sutil elevación al pasar el ratón */
+}
+
+section#historia h2 {
+    color: rgb(7, 113, 219);
+    font-size: 2.4rem;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+section#historia p {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #444;
+    font-family: 'Arial', sans-serif;
+}
+
+section#historia button {
+    background-color: rgb(7, 113, 219);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(7, 113, 219, 0.4);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section#historia button:hover {
+    background-color: transparent;
+    color: rgb(7, 113, 219);
+    border: 2px solid rgb(7, 113, 219);
+    box-shadow: 0 0 12px 5px rgba(7, 113, 219, 0.6);
+    transform: scale(1.05);
+}
+
+
+/* Sección de Contacto */
+section#contacto {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #ffecb3, #ffe082);
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+section#contacto:hover {
+    transform: translateY(-10px); /* Sutil elevación al pasar el ratón */
+}
+
+section#contacto h2 {
+    color: rgb(7, 113, 219);
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+section#contacto p {
+    font-size: 1.15rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+section#contacto a {
+    display: inline-block;
+    margin: 12px 15px;
+    padding: 12px 25px;
+    background-color: white;
+    color: rgb(7, 113, 219);
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+section#contacto a:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 150, 136, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 150, 136, 0.3);
+}
+
+section#contacto a img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+section#contacto a:hover img {
+    transform: scale(1.2); /* Efecto en los iconos */
+}
+
+/* Footer */
+footer {
+    padding: 30px;
+    background-color: rgb(7, 113, 219);
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.2);
+    color: #f5f5f5; /* Cambiar color al pasar el mouse */
+}
+
+footer .social-icons img {
+    margin-right: 8px;
+    vertical-align: middle;
+}

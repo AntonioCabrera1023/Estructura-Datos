@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eaeaea; /* Fondo suave */
+    color: #2c2c2c; /* Texto oscuro para buena legibilidad */
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-link {
+    padding: 10px;
+    background-color: #0077b6; /* Azul profesional */
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #005f86; /* Borde más oscuro para contraste */
+}
+
+#nav-link:hover {
+    background-color: #eaeaea; /* Fondo claro al pasar sobre el enlace */
+    color: #0077b6; /* Texto azul en hover */
+    border-color: #0077b6;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f3057, #00587a, #008891); /* Fondo degradado en tonos de azul elegante */
+    color: white; /* Texto en blanco para mayor contraste */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+}
+
+.intro h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: 300;
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contacto_ico {
+    height: 25px;
+    width: 25px;
+}
+
+.habilidades_ico {
+    height: 50px;
+    width: 50px;
+}
+
+/* Estilos para la sección de habilidades */
+#habilidades {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ffffff; /* Fondo blanco para mayor limpieza */
+    color: #2c2c2c; /* Texto oscuro */
+}
+
+#habilidades h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00587a; /* Azul oscuro */
+}
+
+/* Contenedor del carrusel */
+.carousel-container {
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+/* Carrusel */
+.carousel {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel {
+    scrollbar-width: none;
+}
+
+.item {
+    min-width: 100px;
+    background-color: #ffffff; /* Blanco para contraste con los bordes */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    scroll-snap-align: start;
+    flex: none;
+    transition: transform 0.3s ease;
+}
+
+.item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #00587a; /* Título en azul oscuro */
+}
+
+.item p {
+    font-size: 1rem;
+    color: #666666; /* Texto gris oscuro */
+}
+
+/* Efecto hover */
+.item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    background-color: #f0f4f8; /* Fondo ligeramente azul al pasar el cursor */
+}
